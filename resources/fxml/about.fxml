@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.t7.AboutController">
+   <left>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <image>
+            <Image url="@../img/information.png" />
+         </image>
+      </ImageView>
+   </left>
+   <bottom>
+      <Hyperlink fx:id="hypGithub" alignment="CENTER" onAction="#actionLink" prefHeight="24.0" prefWidth="158.0" text="link" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
+      </Hyperlink>
+   </bottom>
+   <right>
+      <TextArea prefHeight="286.0" prefWidth="390.0" text="Users &#10;&#10;Version 2021.1&#10;© ljesenkovi&#10;RPR 2021/22&#10;For more information visit link&#10;&#10;&#10;&#10;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextArea>
+   </right>
+</BorderPane>
